@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="jijizn" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- bootstrap-css -->
+	<link rel="stylesheet" href="./css/bootstrap.css" type="text/css" media="all" />
+<!--// bootstrap-css -->
+<!-- css -->
+	<link rel="stylesheet" href="./css/style.css" type="text/css" media="all" />
+<!--// css -->
+<!-- js -->
+	<script type="text/javascript" src="./js/jquery.min.js"></script>
+<!-- js -->
+<!--fonts-->
+	<!-- <link href='http://fonts.useso.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'> -->
+<!--/fonts-->
+	<!-- start-smoth-scrolling -->
+		<script type="text/javascript" src="./js/move-top.js"></script>
+		<script type="text/javascript" src="./js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+	<!-- start-smoth-scrolling -->
+
+</head>
+<body>
+<!--header-->
+<div class="header">
+	<div class="container">
+		<div class="header-left">
+			<a href="index.html"><img src="./images/logo.png" alt=""/></a>
+		</div>
+		<div class="header-right">
+			<span class="menu">MENU</span>
+					<ul class="nav1">
+						<li><a class="scroll active" href="#home">首页</a></li>
+						<li><a class="scroll" href="#about">关于我们</a></li>	
+						<li><a class="scroll" href="#approach">财税管理平台</a></li>
+						<li><a class="scroll" href="#services">定制开发</a></li>
+						<li><a class="scroll" href="#keep">联系我们</a></li>
+					</ul>
+				<!-- script for menu -->
+						<script> 
+							$( "span.menu" ).click(function() {
+							$( "ul.nav1" ).slideToggle( 300, function() {
+							 // Animation complete.
+							});
+							});
+						</script>
+				<!-- //script for menu -->
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+<!--//header-->
+<!--banner-->
+<div id="home" class="banner">
+	<div class="container">
+			<!-- responsiveslides -->
+					<script src="./js/responsiveslides.min.js"></script>
+						<script>
+							// You can also use "$(window).load(function() {"
+							$(function () {
+							 // Slideshow 4
+							$("#slider3").responsiveSlides({
+								auto: true,
+								pager: true,
+								nav: false,
+								speed: 500,
+								namespace: "callbacks",
+								before: function () {
+							$('.events').append("<li>before event fired.</li>");
+							},
+							after: function () {
+								$('.events').append("<li>after event fired.</li>");
+								}
+								});
+								});
+					</script>
+				<!-- responsiveslides -->
+		<div  id="top" class="callbacks_container">
+			<ul class="rslides" id="slider3">
+				<li>
+					<div class="banner-info text-center">
+						<h1>专业技术</h1>
+						<p>拥有专业的软件开发团队，丰富的实战经验，专业软件开发公司的协同开发经验与成果积累.</p>
+						<!--<div class="start">
+								<a href="#">START TOUR</a>
+								<a href="#">SEND A QUOTE</a>
+						</div>-->
+					</div>
+				</li>
+				<li>
+					<div class="banner-info text-center">
+						<h1>客户服务</h1>
+						<p>以客户为中心，为客户提供优质的服务，为客户提供个性化的、最适合您的软件开发服务</p>
+						<!--<div class="start">
+								<a href="#">START TOUR</a>
+								<a href="#">SEND A QUOTE</a>
+						</div>-->
+					</div>
+				</li>
+				<li>
+					<div class="banner-info text-center">
+						<h1>执行效率</h1>
+						<p>拒绝拖拉，做一个按时、高质、高效的软件开发.</p>
+						<!--<div class="start">
+								<a href="#">START TOUR</a>
+								<a href="#">SEND A QUOTE</a>
+						</div>-->
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!--//banner-->
+<!-- <div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >网页模板</a></div> -->
+<!--about-->
+<div id="about" class="about">
+	<div class="about-grids">
+		<div class="about-left">
+			<div class="about-info">
+				<h3>关于我们</h3>
+				<p>广州佶佶智能科技有限公司，自成立以来秉承“诚信、协作、奉献、超越”的理念，致力为着力打造集战略咨询、平台技术和专业服务为一体的软件开发企业。我们的专业团队将作为您的IT部门来开展长期紧密的合作，立足于您的业务和信息化目标，开发符合您业务目标和商业价值的软件。 我们将抓住机遇，坚持以人为本，加大自主产品创新，提升重大工程实施能力，加快规范化进程。</p>
+				<!--<p>The success of a client’s asset management software (EAM, CMMS, ERP) system begins with theirmaster data sets. </p>-->
+				<!--<a href="#">READ MORE</a>-->
+			</div>
+		</div>
+		<div class="about-right">
+			<img src="images/pic1.jpg" alt=""/>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+<!--//about-->
+<!--behind-->
+<div class="behind">
+	<div class="container">
+		<p>“提高80%以上的工作效率，为效率开发而生.”</p>
+	</div>
+</div>
+<!--//behind-->
+<!--approach-->
+<div id="approach" class="approach">
+	<div class="approach-grids">
+		<div class="approach-left">
+			<img src="images/img01174.JPG" alt=""/>
+		</div>
+		<div class="approach-right">
+			<h3>财税管理平台</h3>
+			<p>模块一：日程管理。提供更高效的时间管理。 </p>
+			<p>模块二：工商业务管理。工商局事项业务全面解析。 </p>
+			<p>模块三：税务账务管理。包括1、登陆管理 2、申报管理 3、账务处理等。</p>
+			<p>模块四：客户信息管理。</p>
+			<p>模块五：员工管理。权责分明，随时了解团队状态，内勤外勤统一管理。</p>
+			<p>模块六：收费管理。 业务办理服务费、代理记账收费月份明细管理，收费信息提前预警提示。</p>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+<!--//approach-->
+<!--kick-->
+<!-- <div class="kick">
+	<div class="container">
+		<p>“Kick start your reliability initiative with our equipment based Problem, Failure, Action Library. Contact us for a free demo”</p>
+	</div>
+</div>-->
+<!--//kick-->
+<!--services-->
+<!-- <div id="services" class="services">
+	<div class="container">
+		<h3>定制服务</h3>
+	</div>
+</div> -->
+<!--//services-->
+<div id="services" class="services-grids">
+	<div class="services-left">
+		<h3 style="font-size: 25px;margin: 0 0 16px 0;color:white;">软件定制开发</h3>
+		<p>多方面了解所属企业行业痛点，利用信息技术，以互联官为载体，向广大用户提供运营管理、提高工作效率！广大中小企业用户定制开发高效、智能、安全的企业管理平台！…</p>
+	</div>
+	<div class="services-right">
+		<div class="services-list">
+			<ul>
+				<li>前期沟通 </li>
+				<li>需求调研 </li>
+				<li>前端设计 </li>
+				<li>启动研发 </li>
+				<li>软件测试 </li>
+				<li>完成交付 </li>
+			</ul>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+<!--clients-->
+<!-- <div class="clients">
+	<div class="container">
+		<h3>SOME OF OUR CLIENTS</h3>
+		<div class="flex-slider">
+			<ul id="flexiselDemo1">			
+				<li>
+					<img src="images/pic5.jpg" alt=""/>
+				</li>
+				<li>
+					<img src="images/pic6.jpg" alt=""/>
+				</li>
+				<li>
+					<img src="images/pic7.jpg" alt=""/>
+				</li>
+				<li>
+					<img src="images/pic8.jpg" alt=""/>
+				</li>
+				<li>
+					<img src="images/pic9.jpg" alt=""/>
+				</li>
+			</ul>
+			<script type="text/javascript">
+							$(window).load(function() {
+								$("#flexiselDemo1").flexisel({
+									visibleItems: 5,
+									animationSpeed: 1000,
+									autoPlay: true,
+									autoPlaySpeed: 3000,    		
+									pauseOnHover: true,
+									enableResponsiveBreakpoints: true,
+									responsiveBreakpoints: { 
+										portrait: { 
+											changePoint:320,
+											visibleItems: 1
+										}, 
+										landscape: { 
+											changePoint:640,
+											visibleItems: 3
+										},
+										tablet: { 
+											changePoint:768,
+											visibleItems: 4
+										}
+									}
+								});
+								
+							});
+			</script>
+			<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+		</div>
+	</div>
+</div> -->
+<!--//clients-->
+<!--keep in touch-->
+<div id="keep" class="keep">
+	<div class="container">
+		<h3>
+			联系我们
+			<ul>
+				<li style="font-size:14px;">地址：广州市天河区棠下金韵写字楼A座二楼232室</li>
+				<li style="font-size:14px;">电话：020-29886326</li>
+				<li style="font-size:14px;">&nbsp;</li>
+			</ul>
+		</h3>
+		
+	</div>
+</div>
+<!--//keep in touch-->
+<!--footer-->
+<div class="footer">
+	<div class="container">
+		<p>有问题请联系我们 :  <a href="maoguangxia@qq.com">maoguangxia@qq.com</a></p>
+		<p>Copyright &copy; 2017.Company jijizn.com All rights reserved.</p>
+	</div>
+</div>
+<!--//footer-->
+<!-- smooth scrolling -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+		/*
+			var defaults = {
+			containerID: 'toTop', // fading element id
+			containerHoverID: 'toTopHover', // fading element hover id
+			scrollSpeed: 1200,
+			easingType: 'linear' 
+			};
+		*/								
+		$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!-- //smooth scrolling -->
+</body>
+</html>
